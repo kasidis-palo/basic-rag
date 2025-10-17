@@ -47,7 +47,7 @@ evaluation/
 
 1. Run the main evaluation interface:
    ```bash
-   python main_evaluation.py
+   python evaluation/main_evaluation.py
    ```
 
 2. Or run individual steps:
