@@ -30,6 +30,13 @@ Welcome, PyCon community! Follow these steps to set up your environment for the 
 - [Ollama Installation](https://ollama.com/download)
 - Download and install for your OS.
 
+Then pull the models:
+
+```sh
+ollama pull llama3.2
+ollama pull mxbai-embed-large
+```
+
 ## 4. Run Qdrant with Podman
 
 Qdrant will run as a container using Podman (platform-agnostic):
