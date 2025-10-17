@@ -6,6 +6,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 from qdrant_client import QdrantClient
+from openai import OpenAI
+
 from rag import RAG
 from constants import OPENAI_API_KEY, OPENAI_URL, QDRANT_PORT, QDRANT_URL
 from evaluation.utils.llm_utils import LLMEvaluation
@@ -19,7 +21,6 @@ OUTPUT_FILE_NAME = "qa_pairs.jsonl"
 QUERY_PER_PAGE = 3  # จำนวนคู่คำถาม-คำตอบที่จะสร้างต่อหน้า
 
 def prepare_qa_pairs():
-    from openai import OpenAI
     
     pdf_path = SOURCE_PDF_PATH
     
